@@ -94,6 +94,9 @@ function initNewRoom() {
       randomstring += chars.substring(rnum, rnum + 1);
     }
 
+    //my code:  adding code to communicate with server and query to see if there's another ip address close to mine in geographical location
+    //if none found, create one using the random string that was generated
+
     window.location.hash = randomstring;
     location.reload();
   })
